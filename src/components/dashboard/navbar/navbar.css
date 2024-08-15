@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --color-primary: #7562e0;
+    --color-secondary: #4271eb;
+    --color-primary-variant: rgba(102, 0, 255, 0.2);
+    --color-white: #fff;
+    --color-light: #f5f5f5;
+    --color-black: #0f0f1b;
+    --color-light-black: #414141;
+    --color-dark: #4b4a53;
+    --color-info-dark: #7d8da1;
+    --color-span: crimson;
+
+    --color-green: #006a4e;
+    --color-red: #f42a41;
+
+    --color-table-confirmed: #bbf7d0;
+    --color-table-not-confirmed: #fed7aa;
+    --color-table-confirmed-font: #166534;
+    --color-table-not-confirmed-font: #b05834 --card-border-radius: 2rem;
+    --background-color: #DFE1E8;
+
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow-regular: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    --box-shadow--hover: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+        0 5px 14px 0 rgba(0, 0, 0, 0.18);
+    --box-shadow-full: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+
+    --container-width-lg: 82%;
+    --container-width-md: 90%;
+    --container-width-sm: 92%;
+
+    --font-Roboto-Slab: "Roboto Slab", serif;
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Montserrat: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Montserrat);
+}
+
+.emp-dash-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 0px 100px;
+    z-index: 100000;
+    height: 80px;
+    background: white;
+    box-shadow: var(--box-shadow-regular);
+}
+
+.emp-dash-header-brand {
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--color-light-black);
+}
+
+.emp-dash-header-brand-dot {
+    color: var(--color-red);
+}
+
+.emp-dash-header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.emp-dash-header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.emp-dash-header ul li i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #254252;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    background-color: #e1e1e1;
+    transition: 0.5s;
+}
+
+.emp-dash-header ul li i:hover {
+    background-color: #254252;
+    color: white;
+}
+
+.dash-header-counter {
+    position: absolute;
+    top: 10px;
+    right: 155px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.dash-header-notification-panel {
+    position: absolute;
+    max-height: 550px;
+    width: 500px;
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+    top: 80px;
+    right: 150px;
+    overflow-y: auto;
+    display: none;
+}
+
+.dash-header-notification-panel.show {
+    display: block;
+}
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+}
+
+.emp-dash-notification-panel-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.emp-dash-notification-panel-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-Montserrat);
+    color: #4b4a53;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.emp-dash-notification-panel-read {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: var(--font-Montserrat);
+    color: #696969;
+    padding-left: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-right: 20px;
+}
+
+.emp-dash-notification-panel-read:hover {
+    color: #0f0f1b;
+}
+
+.emp-dash-notification-panel-body {
+    transition: 0.5s;
+}
+
+.emp-dash-notification-panel-body:hover {
+    background-color: #DFE1E8;
+}
+
+.emp-dash-notification-body {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    border-bottom: solid 1px #cccdd1;
+}
+
+.emp-dash-notification-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emp-dash-notification-img img {
+    height: 50px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.notification-type {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.notification-body {
+    font-size: 14px;
+}
+
+.emp-dash-notification-timestamp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.notification-time {
+    font-size: 12px;
+}
+
+.notification-date {
+    font-size: 14px;
+}
+
+.emp-dash-all-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emp-dash-all-notification-btn {
+    padding: 8px;
+    background: none;
+    text-decoration: none;
+    color: #696969;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.emp-dash-all-notification-btn:hover {
+    color: #0f0f1b;
+    background-color: #DFE1E8;
+}

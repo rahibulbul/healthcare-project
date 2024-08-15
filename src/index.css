@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --color-primary: #7562e0;
+  --color-secondary: #4271eb;
+  --color-primary-variant: rgba(102, 0, 255, 0.2);
+  --color-white: #fff;
+  --color-light: #f5f5f5;
+  --color-black: #0f0f1b;
+  --color-light-black: #414141;
+  --color-dark: #4b4a53;
+  --color-info-dark: #7d8da1;
+  --color-span: crimson;
+
+  --color-green: #006a4e;
+  --color-red: #f42a41;
+
+  --color-table-confirmed: #bbf7d0;
+  --color-table-not-confirmed:#fed7aa;
+  --color-table-confirmed-font:#166534;
+  --color-table-not-confirmed-font:#b05834
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow-regular: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+  --box-shadow--hover: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+
+  --container-width-lg: 82%;
+  --container-width-md: 90%;
+  --container-width-sm: 92%;
+
+  --font-Roboto-Slab: "Roboto Slab", serif;
+  --font-Roboto: "Roboto", sans-serif;
+  --font-Montserrat: "Montserrat", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Montserrat);
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
