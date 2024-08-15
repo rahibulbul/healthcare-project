@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --color-primary: #7562e0;
+    --color-secondary: #4271eb;
+    --color-primary-variant: rgba(102, 0, 255, 0.2);
+    --color-white: #fff;
+    --color-light: #f5f5f5;
+    --color-black: #0f0f1b;
+    --color-light-black: #414141;
+    --color-dark: #4b4a53;
+    --color-info-dark: #7d8da1;
+    --color-span: crimson;
+
+    --color-green: #006a4e;
+    --color-red: #f42a41;
+
+    --color-table-confirmed: #bbf7d0;
+    --color-table-confirmed-font: #166534;
+    --color-table-not-confirmed: #fed7aa;
+    --color-table-not-confirmed-font: #b05834;
+
+    --color-done: #90D67F;
+    --color-done-light: #D9FBD0;
+    --color-hold: #FFCC85;
+    --color-hold-light: #FFEFCA;
+    --color-reject: #F48270;
+    --color-reject-light: #FFE0DB;
+
+    --card-border-radius: 2rem;
+    --background-color: #DFE1E8;
+
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow-regular: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    --box-shadow--hover: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+        0 5px 14px 0 rgba(0, 0, 0, 0.18);
+    --box-shadow-full: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+    --box-shadow-prime: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+
+    --container-width-lg: 82%;
+    --container-width-md: 90%;
+    --container-width-sm: 92%;
+
+    --font-Roboto-Slab: "Roboto Slab", serif;
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Montserrat: "Montserrat", sans-serif;
+
+    --hover-background: linear-gradient(280deg,
+            rgba(88, 88, 88, 1) 0%,
+            rgba(255, 255, 255, 1) 100%);
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Montserrat);
+}
+
+.emp-dash-main {
+    margin-top: 75px;
+    height: calc(100vh - 75px);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.emp-dash-sidebar {
+    width: 270px;
+    max-width: 270px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.emp-dash-content {
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Dashboard Main Content */
+.emp-dash-page-info {
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emp-dash-page-name {
+    font-size: 20px;
+    color: var(--color-light-black);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.emp-dash-navigator-icon {
+    font-size: 20px;
+    color: var(--color-info-dark);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.emp-dash-navigator-icon:hover {
+    color: black;
+}
+
+.emp-dash-navigator-link {
+    font-weight: 500;
+    color: var(--color-info-dark);
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.emp-dash-navigator-link:hover {
+    color: black;
+}
+
+.emp-dash-summary {
+    width: 100%;
+    height: 600px;
+    background-color: #D9FBD0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.emp-dash-summary-graphs-card {
+    width: 60%;
+    background-color: #90D67F;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.emp-dash-card {
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.emp-dash-cards {
+    box-shadow: var(--box-shadow-regular);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.emp-dash-cards-left {}
+
+.emp-dash-cards:hover {
+    box-shadow: var(--box-shadow--hover);
+}
+
+.emp-dash-graphs {
+    height: 420px;
+    background-color: #f42a41;
+}
+
+.emp-dash-summary-chart {
+    background-color: #FFCC85;
+    flex: 1;
+
+}

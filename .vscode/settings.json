@@ -1,3 +1,15 @@
 {
-  "cSpell.words": ["notif"]
+  "cSpell.words": [
+    "doctorlist",
+    "employeelist",
+    "insurancerecord",
+    "managebills",
+    "managepatient",
+    "medicallist",
+    "medicalrecord",
+    "newbills",
+    "notif",
+    "patientlist",
+    "submittedbills"
+  ]
 }
